@@ -1,0 +1,39 @@
+body {
+    background-image:
+      url("https://static.tumblr.com/6kvm6sz/Kmcmlm2rr/degrade6.jpg"); 
+    background-size: auto 100vh;
+    font-family:  Candara;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: white;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  a {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    text-align: center;
+    color: midnightblue;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
