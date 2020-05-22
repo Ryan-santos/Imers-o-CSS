@@ -2,20 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ryan Santos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ryan Santos</title>
+	<link rel="shortcut icon" href="img/logo2.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <link 
+	href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=PT+Serif&family=Roboto&display=swap" rel="stylesheet">   
+	<script src="https://kit.fontawesome.com/4701cf3e35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Ryan Santos</h1>
-        <h2 class="site-subtitle">jr. web developer</h2>
-    </header>    
+  <header>
+		<nav class="menu">
+			<ul class="container">
+				<li><a href="#Sobre">Sobre</a></li>
+				<li><a href="#portifolio">Projetos</a></li>
+				<li><a href="#Contato">Contato</a></li>
+			</ul>
+		</nav>
+		<div class="fadeIn">
+			<h1 class="site-title">Ryan Santos</h1>
+			<h2 class="site-subtitle">jr. frontend developer</h2>
+		</div>
+  </header>
+  <section class="sobre container"  id="Sobre">
+	  <h2>Sobre</h2>
+	  <figure class="avatar">
+		<!---- <img src="https://image.flaticon.com/icons/svg/2922/2922510.svg" alt="Ryan"> ---->
+	  </figure>
+	   <p>
+		  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed fugit odio omnis laudantium doloribus cupiditate dignissimos, minus architecto obcaecati velit dicta repudiandae sunt itaque reprehenderit deserunt sint nam fugiat! 
+	   </p>
+	   <p>
+		  Dolor facilis quia velit, sunt suscipit eligendi dolore error alias unde est numquam cum quo eaque, tempore voluptatem ullam, animi maiores accusamus quidem exercitationem in temporibus architecto voluptates itaque? Numquam! 
+	   </p>	  
+	   <p>
+		  Quibusdam porro eos, distinctio quia iste quaerat labore delectus qui id magnam provident quidem, veniam necessitatibus sapiente hic? Totam placeat qui harum quidem aliquam aliquid maiores illo vero dignissimos laboriosam!
+	   </p>
+	   <p>
+		  Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">imersão css da alura</a> 
+	   </p>
+  </section>
+
+  <section class="portfolio container" id="portifolio">
+		<h2>Projetos</h2>
+		<div class="grid">
+
+			<figure>
+				<a href="#abrirModal1"> <img class="img-portfolio" src="https://image.flaticon.com/icons/png/512/2897/2897841.png" alt="ecommerce"> </a>
+				<figcaption>Posivel careira </figcaption>
+			</figure>
+			<div id="abrirModal1" class="modal">
+				<div> 
+					<a href="#fechar" title="Fechar" class="fechar">x</a>
+					<h1> 1 sou a parte de trás :) </h1>
+				</div>
+			</div>
+			
+			<figure>
+				<a href="#abrirModal2"> <img class="img-portfolio" src="https://image.flaticon.com/icons/png/512/964/964478.png" alt=">mobile"> </a>
+				<figcaption>Cursos</figcaption>
+			</figure>
+			<div id="abrirModal2" class="modal">
+				<div> 
+					<a href="#fechar" title="Fechar" class="fechar">x</a>
+					<h1> 2 sou a parte de trás :) </h1>
+				</div>
+			</div>
+
+			<figure>
+				<a href="#abrirModal3"> <img class="img-portfolio" src="https://image.flaticon.com/icons/svg/2091/2091359.svg" alt="Web design"> </a>
+				<figcaption>Web design</figcaption>
+			</figure>
+			<div id="abrirModal3" class="modal">
+				<div> 
+					<a href="#fechar" title="Fechar" class="fechar">x</a>
+					<h1> 3 sou a parte de trás :) </h1>
+				</div>
+			</div>
+
+			<figure>
+				<a href="#abrirModal4"> <img class="img-portfolio" src="https://image.flaticon.com/icons/svg/2506/2506499.svg" alt="Projetos pessoais"> </a>
+				<figcaption>Projetos pessoais</figcaption>
+			</figure>
+			<div id="abrirModal4" class="modal">
+				<div> 
+					<a href="#fechar" title="Fechar" class="fechar">x</a>
+					<h1> 4 sou a parte de trás :) </h1>
+				</div>
+			</div>
+		</div>	
+  </section>
+
+  <section class="contato container" id="Contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/Ryan-santos">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/ryandossantosf1">
+		<i class="fab fa-twitter-square"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/ryandossantosfelix/">
+		<i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://ryandossantosfelix22@gmail.com">
+		<i class="fas fa-envelope-square"></i>
+      </a>
+    </div>
+  </section>
+
 </body>
 </html>
