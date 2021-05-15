@@ -144,18 +144,30 @@ font-family: 'Merienda', cursive;
   }
 }
 
+.caixa {
+  background-color: black;
+  border-radius: 10px;
+}
+
 .sobre h2,
 .codigos h2,
 .certificados h2{
+ 
  font-family: 'Roboto', sans-serif;
  margin-bottom: 10px;
  font-size: 1.2em;
+ text-align: center;
+ color: #000;
+ background-color: white;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ padding: 5px;
 }
 
 .sobre p {
   text-indent: 0.4em;
   font-size: 1em;
-  margin-bottom: 0.5em;
+  margin: 0.6em;
 }
 
 
@@ -167,15 +179,13 @@ font-family: 'Merienda', cursive;
 .codigo li {
   list-style-type: none;
   padding: 5px;
-  padding-left: 20px;
   font-size: 1em;
+  margin: 0.5em;
 }
 
-.codigos .codigo p {
-  margin-bottom: 10px;
-}
 
 .codigo a {
+  margin: 0.5em;
   border-radius: 10px;
   padding: 4px;
 }
@@ -187,7 +197,8 @@ font-family: 'Merienda', cursive;
 
 .certificado li {
   list-style-type: none;
-  padding-bottom: 10px;
+  margin: 0.5em;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -207,13 +218,14 @@ font-family: 'Merienda', cursive;
   .certificado img {
     margin: 10px;
     width: 20em;
-    margin-left: 35px;
+    margin-left: 2.5em;
   }
 }
 
 .codigos p,
 .certificados p {
   margin-bottom: 30px;
+  margin: 0.5em;
 }
 
 .contato h2 {
