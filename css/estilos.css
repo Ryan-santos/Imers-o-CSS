@@ -266,3 +266,9 @@ font-family: 'Merienda', cursive;
   background: white;
   color: black;
 }
+
+.contato p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
