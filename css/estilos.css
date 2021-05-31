@@ -188,11 +188,47 @@ font-family: 'Merienda', cursive;
   margin: 0.5em;
   border-radius: 10px;
   padding: 4px;
+  user-select: none;
 }
 
 .codigo a:hover {
   background-color: white;
   color: black;
+}
+
+/* Checkbox Hack */
+#toggle-3,
+#toggle-2,
+#toggle-1 {
+  display:none;
+}
+
+label { 
+ -webkit-appearance: push-button;
+ -moz-appearance: button; 
+ display: inline-block;
+ cursor: pointer;
+ padding: 5px;
+}
+
+/* CSS padrão da div */
+#mostra-3,
+#mostra-2,
+#mostra {
+  display:none;
+}
+
+/* CSS quando o checkbox está marcado */
+#toggle-1:checked ~ #mostra {
+  display:block;
+}
+
+#toggle-2:checked ~ #mostra-2 {
+  display:block;
+}
+
+#toggle-3:checked ~ #mostra-3 {
+  display:block;
 }
 
 .certificado li {
