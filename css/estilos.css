@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( 114.9deg,  rgba(34,34,34,1) 8.3%, rgba(0,40,60,1) 41.6%, rgba(0,143,213,1) 93.4% );
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: space;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+@media (min-width: 600px) {
+ body {
+   font-size: 17px;
+ }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
+  
+header {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu {
+    background-color: black;
+    position: fixed;
+    width: 100vw; 
+    top: 0;
+    z-index: 1;
+}
+  
+.menu li {
+    font-size: 15px;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.menu a:active,
+.menu a {
+  display: block;
+  padding: 5px 10px;
+  transition: background-color .3s ease;
+}
+
+.menu a:hover {
+  background-color: rgba(0, 40, 60, 0.993);
+  border-radius:10px;
+}
+ 
+a {
+    color: white;
+    text-decoration: none;
+}
+ 
+@media (min-width: 1200px) {
+  .menu li{
+    font-size: 25px;
+  }
+ }
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fadeIn {
+ -webkit-animation: fadeIn 2.5s ease-in-out;
+ -moz-animation: fadeIn 2.5s ease-in-out;
+ -o-animation: fadeIn 2.5s ease-in-out;
+ animation: fadeIn 2.5s ease-in-out;
+} 
+
+.site-subtitle,
+.site-title {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.site-title {
+font-size: 3em;
+font-family: 'Merienda', cursive;
+}
+  
+.site-subtitle {
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    line-height: 2.0em;
+}
+
+.sobre,
+.contato ,
+.certificados,
+.codigos {
+  padding: 1.5em 3em 1em 3em;
+  min-height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contato{
+  min-height: 0vh;
+  padding: 1em;
+}
+
+@media (min-width: 1200px) {
+  .container {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
+
+.caixa {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.sobre h2,
+.codigos h2,
+.certificados h2{
+ 
+ font-family: 'Roboto', sans-serif;
+ margin-bottom: 10px;
+ font-size: 1.2em;
+ text-align: center;
+ color: #000;
+ background-color: white;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ padding: 5px;
+}
+
+.sobre p {
+  text-indent: 0.4em;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
+
+.sobre a:hover {
+  background-color: rgba(6, 184, 255, 0.383);
+  text-decoration: none;
+}
+
+.codigo li {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 1em;
+  margin: 0.5em;
+}
+
+
+.codigo a {
+  margin: 0.5em;
+  border-radius: 10px;
+  padding: 4px;
+  user-select: none;
+}
+
+.codigo a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Checkbox Hack */
+#toggle-3,
+#toggle-2,
+#toggle-1 {
+  display:none;
+}
+
+label { 
+ -webkit-appearance: push-button;
+ -moz-appearance: button; 
+ display: inline-block;
+ cursor: pointer;
+ padding: 5px;
+}
+
+/* CSS padrão da div */
+#mostra-3,
+#mostra-2,
+#mostra {
+  display:none;
+}
+
+/* CSS quando o checkbox está marcado */
+#toggle-1:checked ~ #mostra {
+  display:block;
+}
+
+#toggle-2:checked ~ #mostra-2 {
+  display:block;
+}
+
+#toggle-3:checked ~ #mostra-3 {
+  display:block;
+}
+
+.certificado li {
+  list-style-type: none;
+  margin: 0.5em;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .certificado li{
+    padding-bottom: 40px;
+  }
+}
+
+.certificado img {
+  margin: 10px;
+  width: 15em;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+@media (min-width: 1200px) {
+  .certificado img {
+    margin: 10px;
+    width: 20em;
+    margin-left: 2.5em;
+  }
+}
+
+.codigos p,
+.certificados p {
+  margin-bottom: 30px;
+  margin: 0.5em;
+}
+
+.contato h2 {
+ margin-bottom: 20px;
+ font-size: 1em;
+ color: white;
+}
+
+.contato {
+  background-color: black;
+  
+}
+
+.midias li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+.midias a {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius:10px; 
+  background: black;
+  
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contato a:hover {
+  background: white;
+  color: black;
+}
+
+.contato p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
