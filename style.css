@@ -210,8 +210,8 @@ body li, a{
 .elementos_conhecimentos li progress {
     display:block;
     -webkit-appearance: none;
-    height: .6em;
-    width: 11em;
+    height: .6rem;
+    width: 11rem;
 }
 
 .elementos_conhecimentos li progress::-webkit-progress-bar {
@@ -248,7 +248,7 @@ body li, a{
 
 .caixa_projetos {
     width: 15rem;
-    height: 15rem;
+    min-height: 15rem;
     margin: 1rem;
     padding: .8rem;
     background: var(--cor-variavel-cor-1);
@@ -270,6 +270,10 @@ body li, a{
 .caixa_projetos,
 .caixa_projetos li{
     padding: .4rem;
+}
+
+.caixa_projetos .link_center {
+    text-align: center;
 }
 
 .caixa_projetos li a {
@@ -359,8 +363,9 @@ body li, a{
 }
 
 .elementos_contato a {
-    border: 1px solid var(--cor-variavel-cor-5);
+    border: 2px solid var(--cor-variavel-cor-5);
     color: var(--cor-variavel-cor-4);
+    text-align: center;
     width: 100px;
     margin: 10px;
     padding: 5px;
